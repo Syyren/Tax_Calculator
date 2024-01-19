@@ -3,21 +3,23 @@ let $ = function (id) { return document.getElementById(id) }
 function processEntry()
 {
     let income = $("income").value;
+    let message;
     if (income > 0)
     {
         income = parseFloat(income);
-        $("owed").textContent = "$" + calculateTax(income).toFixed(2);
+        message = "$" + calculateTax(income).toFixed(2);
     }
     else if (isNaN(income))
     {
         alert("Error: Entry is invalid. Please enter a number.");
-        $("owed").textContent = "Please enter a number for your income."
+        message = "Please enter a number for your income."
     }
     else
     {
         alert("Error: Entry is invalid. Please enter a number greater than zero.");
-        $("owed").textContent = "Your income must be greater than zero."
+        message = "Your income must be greater than zero."
     }
+    $("owed").textContent = message;
 }
 
 function calculateTax(income)
