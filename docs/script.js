@@ -11,10 +11,12 @@ function processEntry()
     else if (isNaN(income))
     {
         alert("Error: Entry is invalid. Please enter a number.");
+        $("owed").textContent = "Please enter a number for your income."
     }
     else
     {
         alert("Error: Entry is invalid. Please enter a number greater than zero.");
+        $("owed").textContent = "Your income must be greater than zero."
     }
 }
 

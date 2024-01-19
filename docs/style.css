@@ -3,23 +3,39 @@ body
     color: white;
     background-color: black;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 input
 {
     margin: 10px auto;
     text-align: center;
+    color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(22, 22, 22);
+}
+
+input:focus
+{
+    outline: none;
 }
 
 .processEntryBtn
 {
     height: 50px;
     width: 75px;
+    border: 2px solid black;
     border-radius: 20px;
     color: white;
-    background-color: black;
+    background-color: rgb(22, 22, 22);
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.processEntryBtn:hover
+{
+    color: black;
+    background-color: aliceblue;
 }
 
 .row
