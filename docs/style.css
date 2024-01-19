@@ -1,0 +1,40 @@
+body
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input
+{
+    margin: 10px auto;
+    text-align: center;
+}
+
+.processEntryBtn
+{
+    height: 50px;
+    width: 75px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.row
+{
+    margin: 20px 0px;
+    font-size: larger;
+}
+
+.bubble
+{
+    color: black;
+    background-color: rgb(191, 255, 161);
+    text-align: center;
+    width: 50%;
+    margin: 40px auto;
+    border-radius: 20px;
+    padding: 10px 0px;
+}
