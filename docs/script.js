@@ -1,25 +1,24 @@
 let $ = function (id) { return document.getElementById(id) }
 
-function processEntry()
+let Dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+
+function processEntry(input, output)
 {
-    let income = $("income").value;
+    let income = $(input).value;
     let message;
     if (income > 0)
     {
-        income = parseFloat(income);
-        message = "$" + calculateTax(income).toFixed(2);
+        message = Dollar.format(calculateTax(parseFloat(income)));
     }
     else if (isNaN(income))
     {
-        alert("Error: Entry is invalid. Please enter a number.");
-        message = "Please enter a number for your income.";
+        message = 'Please enter a number for your income.';
     }
     else
     {
-        alert("Error: Entry is invalid. Please enter a number greater than zero.");
-        message = "Your income must be greater than zero.";
+        message = 'Your income must be greater than zero.';
     }
-    $("owed").textContent = message;
+    $(output).textContent = message;
 }
 
 function calculateTax(income)
