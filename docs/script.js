@@ -1,11 +1,10 @@
 let $ = function (id) { return document.getElementById(id) }
 
-let Dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
-
 function processEntry(input, output)
 {
     let income = $(input).value;
     let message;
+    let Dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
     if (income > 0)
     {
         message = 'You will owe: ' + Dollar.format(calculateTax(parseFloat(income)));
