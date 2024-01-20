@@ -1,4 +1,4 @@
-let $ = function (id) { return document.getElementById(id) }
+let $ = function (id) { return document.getElementById(id) };
 
 function processEntry(input, output)
 {
@@ -18,7 +18,7 @@ function processEntry(input, output)
         message = 'Your income must be greater than zero.';
     }
     $(output).textContent = message;
-}
+};
 
 function calculateTax(income)
 {
@@ -40,4 +40,4 @@ function calculateTax(income)
         }
     }
     return amountOwed;
-}
+};
