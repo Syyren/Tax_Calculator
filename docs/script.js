@@ -8,7 +8,7 @@ function processEntry(input, output)
     let message;
     if (income > 0)
     {
-        message = Dollar.format(calculateTax(parseFloat(income)));
+        message = 'You will owe: ' + Dollar.format(calculateTax(parseFloat(income)));
     }
     else if (isNaN(income))
     {
