@@ -15,7 +15,7 @@ function processEntry(input, output)
     }
     else
     {
-        message = 'Your income must be greater than zero.';
+        message = 'Please enter a number greater than zero.';
     }
     $(output).textContent = message;
 };

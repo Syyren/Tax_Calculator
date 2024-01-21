@@ -1,7 +1,7 @@
 body
 {
-    color: white;
-    background-color: black;
+    color: rgb(191, 255, 161);
+    background-color: rgb(49, 61, 42);
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -10,10 +10,10 @@ input
 {
     margin: 10px auto;
     text-align: center;
-    color: white;
-    border: 2px solid black;
+    color: rgb(49, 61, 42);
+    border: 2px solid rgb(131, 167, 113);
     border-radius: 20px;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(191, 255, 161);
 }
 
 input:focus
@@ -25,17 +25,23 @@ input:focus
 {
     height: 50px;
     width: 75px;
-    border: 2px solid black;
+    border: 2px solid rgb(131, 167, 113);
     border-radius: 20px;
-    color: white;
-    background-color: rgb(22, 22, 22);
+    color: rgb(49, 61, 42);
+    background-color: rgb(191, 255, 161);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .processEntryBtn:hover
 {
-    color: black;
-    background-color: aliceblue;
+    color: rgb(49, 61, 42);
+    background-color: rgb(131, 167, 113);
+}
+
+.processEntryBtn:active
+{
+    border: 2px solid rgb(104, 131, 90);
+    background-color: rgb(104, 131, 90);
 }
 
 .row
@@ -46,11 +52,12 @@ input:focus
 
 .bubble
 {
-    color: black;
+    color: rgb(49, 61, 42);
     background-color: rgb(191, 255, 161);
     text-align: center;
-    width: 50%;
+    word-wrap: break-word;
+    width: 450px;
     margin: 40px auto;
     border-radius: 20px;
-    padding: 10px 0px;
+    padding: 10px 5px;
 }
